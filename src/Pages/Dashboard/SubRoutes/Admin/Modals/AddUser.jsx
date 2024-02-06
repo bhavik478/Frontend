@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import "../../Settings/settings.css";
 import avatar from "../../../../../assets/images/avatar.svg";
 import useUserCollection from "../../../../../Hooks/useUserCollection";
-import { useSelector } from "react-redux";
 import imageCompression from "browser-image-compression";
 import { BsFillCameraFill } from "react-icons/bs";
 import Select from "react-select";
