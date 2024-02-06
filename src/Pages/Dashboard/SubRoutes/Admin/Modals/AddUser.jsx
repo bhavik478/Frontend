@@ -15,7 +15,7 @@ export default function AddUser({ setAddModal }) {
   const [role, setRole] = useState(null);
   const { updateUserProfile } = useUserCollection();
   const { Signup } = useAuth();
-  const {sendmail}=useSendmail();
+  const { sendmail } = useSendmail();
 
   // const [feildData, setFeildData] = useState({
   //   // email: "brijraj@gmail.com",
@@ -79,9 +79,9 @@ export default function AddUser({ setAddModal }) {
     //console.log(userData);
     Signup(userData).then((res) => {
       sendmail({
-        name:e.target.userEmail.value ,
-        subject:'credentials cardre',
-        message:`your email:-${e.target.userEmail.value},
+        name: e.target.userEmail.value,
+        subject: "credentials cardre",
+        message: `your email:-${e.target.userEmail.value},
                  your password:-${e.target.userPassword.value}`,
       });
       toast.success("successfully Add new");
